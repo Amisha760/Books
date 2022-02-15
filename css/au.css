@@ -1,0 +1,87 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url("../images/background.jpg");
+  overflow: hidden;
+}
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 350px ;
+  grid-template-areas: "image" "text";
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  
+
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+.card-image {
+  grid-area: image;
+  background: url("../images/p1.jpeg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card-image_card2 {
+  grid-area: image;
+  background: url("../images/p4.jpeg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  border-radius: 15px;
+  background:url("../images/p.jpeg");
+
+}
+.card-text .date {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+}
+.card-text p {
+  color: black;
+  align-items: center;
+  font-size:15px;
+  font-weight: 300;
+  font-family: 'Suez One', serif;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:18px;
+}
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+#a1{
+  font-size: 10px;
+}
+#c1{
+  font-size: 12px;
+}
+.card-image_card3 {
+  grid-area: image;
+  background: url("../images/p2.jpeg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card-image_card4 {
+  grid-area: image;
+  background: url("../images/p3.jpeg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+

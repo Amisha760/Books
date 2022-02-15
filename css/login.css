@@ -1,0 +1,63 @@
+#myVideo {
+   position: fixed;
+   right:-5px;
+   bottom:-95px;
+  width: 120%; 
+  height: 130%;
+}
+body{
+  background-color: black;
+}
+.content {
+  position: absolute;
+  bottom: 10px;
+  right:0px;
+  background: rgba(649,649,649, 0.2);
+  color: #f1f1f1;
+  width: 25%;
+  height:90%;
+  padding: 20px;
+  text-align: center;
+}
+input,#myBtn{
+  height:40px;
+  width:200px;
+  background: rgba(0,0, 0, 0.8);
+  color:white;
+}
+#myBtn:hover{
+ width:200px;
+ height:40px;
+ background:rgba(190,190,190, 0.8);
+ color:black;
+}
+input:hover{
+  color: lightpink;
+}
+h1{
+  color:black;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate
+ {
+  0%,100%
+  {
+       
+       filter: blur(2px);
+       text-shadow: 0 0 10px #ff99bb,
+                   0 0 20px #ff99bb,
+                   0 0 40px #ff99bb,
+                   0 0 80px #ff99bb,
+                   0 0 120px #ff99bb,
+                   0 0 100px#ff99bb,
+                   0 0 100px#ff99bb,
+                   0 0 100px #ff99bb;
+  }
+
+  5%,95%
+  {
+       color:white;
+       filter: blur(0px);
+       text-shadow: 0 0 10px none;
+  }
+}

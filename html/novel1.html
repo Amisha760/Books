@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <style>
+img:hover {
+  opacity: 0.3;
+}
+
+.next {
+  position:absolute;
+  right:280px;
+  bottom:160px;
+  color: white;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  position: absolute;
+  right:750px;
+   bottom:160px;
+  color: white;
+}
+
+.prev:hover,
+.next:hover{
+  background-color: rgba(0, 0, 0, 1);
+}
+
+
+
+    #myVideo {
+   position: fixed;
+   right:0px;
+   bottom:-625px;
+  width: 100%; 
+  height: 300%;
+  z-index: -1;
+}
+.content {
+  font-size: 35px;
+  position: absolute;
+  bottom: 50px;
+  right:125px;
+  background: rgba(0,0,0, 0.2);
+  color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  width:1000px;
+  height:500px;
+  z-index: -1;
+  }
+  #a1:hover{
+  opacity: 0.5;
+ }
+
+
+ #b{
+  position: absolute;
+  bottom:10px;
+  right: 270px;
+  text-align: center;
+ }
+ h1{
+  color:black;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate
+ {
+  0%,100%
+  {
+       
+       filter: blur(2px);
+       text-shadow: 0 0 5px #b3ffff,
+                   0 0 10px  #b3ffff,
+                   0 0 15px  #b3ffff,
+                   0 0 20px  #b3ffff,
+                   0 0 25px  #b3ffff,
+                   0 0 50px  #b3ffff,
+                   0 0 55px #b3ffff,
+                   0 0 60px #b3ffff;
+  }
+
+  5%,95%
+  {
+       color:rgb(0, 0, 0,0.8);
+       filter: blur(0px);
+       text-shadow: 0 0 5px none;
+  }
+}
+</style>
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+<source src="images/play1.mp4" type="video/mp4">
+</video>
+<div class="content">
+ <h1>Harry Potter</h1>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/harry1.jpg" style="width:40%">
+      <a href=""><div class="h1">Harry Potter and the Sorcerers Stone</div></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/harry2.jpg" style="width:40%">
+      <a href="https://fullmoviesfreedownload.co/harry-potter-and-the-chamber-of-secrets-2002.html"><div class="h1">Harry Potter and the Chamber of Secrets </div></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/harry3.jpg" style="width:40%">
+      <a href="https://fullmoviesfreedownload.co/harry-potter-and-the-prisoner-of-azkaban-2004.html"><div class="h1">Harry Potter And The Prisoner Of Azkaban</div></a>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/harry4.jpg" style="width:40%">
+      <a href="https://fullmoviesfreedownload.co/harry-potter-and-the-goblet-of-fire-2005.html"><div class="h1">Harry Potter And The Goblet Of Fire</div></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/harry5.jpg" style="width:40%">
+      <a href="https://fullmoviesfreedownload.co/harry-potter-and-the-order-of-the-phoenix-2007.html"><div class="h1">Harry Potter and the Order of the Phoenix</div></a>
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/harry6.jpg" style="width:40%">
+      <a href="https://fullmoviesfreedownload.co/harry-potter-and-the-half-blood-prince-2009.html"><div class="h1">Harry Potter And The Half-Blood Prince </div></a>
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/harry71.jpg" style="width:40%">
+      <a href="https://fullmoviesfreedownload.co/harry-potter-and-the-deathly-hallows-part-1-2010.html"><div class="h1">Harry Potter And The Deathly Hallows Part 1</div></a>
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/harry72.jpg" style="width:40%">
+      <a href="https://fullmoviesfreedownload.co/harry-potter-and-the-deathly-hallows-part-2-2011.html"><div class="h1">Harry Potter And The Deathly Hallows Part 2 </div></a>
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="img/harry8.jpg" style="width:40%">
+      <a href="#"><div class="h1">Harry Potter And The Cursed Child</div></a>
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+</body>
+</html>
